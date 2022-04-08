@@ -22,13 +22,13 @@ namespace ExceptionHandlingExercise
             var str = ""; 
 
             foreach(var piece in arr)
-            { 
+            {
+               
                 try
                 {
-
-
+                    
                     str = piece.ToString();
-                    var num = int.Parse(str);   //can only parse a string
+                    var num = int.Parse(str);   //can only parse a string cannot parse a char ''
 
                     numbers.Add(num);
                 }
@@ -61,10 +61,10 @@ namespace ExceptionHandlingExercise
 
 
 
-                //foreach (var num in numbers)
-                //{
-                //    Console.WriteLine(num);
-                //}
+                foreach (var num in numbers)
+                {
+                    Console.WriteLine(num);
+                }
         }
     }
 }
